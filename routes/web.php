@@ -17,8 +17,10 @@ Route::get('/', function () {
 Route::resource('/contacto', 'ContactoController');
 Route::resource('/ingreso', 'IngresoController');
 Route::resource('/gasto', 'GastoController');
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
-Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+//Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
+//Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/google', 'Auth\LoginController@redirectToProvider');
+Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

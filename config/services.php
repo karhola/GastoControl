@@ -29,10 +29,16 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-    'facebook' => [
+    /*'facebook' => [
         'client_id' => '392337008359476',
         'client_secret' => '36d4e128235cc11b43dd1e43c60bafa5',
         'redirect' => 'http://gastocontrol.test/login/facebook/callback',
+    ],*/
+    'google' => [
+        'client_id' => '975100669721-mckntj0i2ob07rpoqqrj7jvlhst0sfla.apps.googleusercontent.com',
+        'client_secret' => 'Xy3X48jfhFMlHaGucaYRkx8o',
+        'redirect' => 'http://localhost:8000',
     ],
+
 
 ];
